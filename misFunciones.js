@@ -13,10 +13,10 @@ function traerInformacion(){
 		for (i=0; i<respuesta.items.length; i++){
 			miTabla += '<tr>';
 	        miTabla += '<td>'+ respuesta.items[i].id+ '</td>'; 		
-	        miTabla += '<td>'+ respuesta.items[i].brand+ '</td>'; 		
-	        miTabla += '<td>'+ respuesta.items[i].name+ '</td>'; 		
-	        miTabla += '<td>'+ respuesta.items[i].model+ '</td>'; 		
+	        miTabla += '<td>'+ respuesta.items[i].owner+ '</td>'; 		
+	        miTabla += '<td>'+ respuesta.items[i].capacity+ '</td>'; 		
 	        miTabla += '<td>'+ respuesta.items[i].category_id+ '</td>'; 		
+	        miTabla += '<td>'+ respuesta.items[i].name+ '</td>'; 		
 			miTabla += '</tr>';
 	
 		}
