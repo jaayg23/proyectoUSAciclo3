@@ -1,4 +1,4 @@
-function traerInformacion(){
+function traerInformacionSalones(){
 	$.ajax({    
     url : 'https://g73664e6c770cfe-partyroom.adb.us-ashburn-1.oraclecloudapps.com/ords/admin/partyroom/partyroom',
 	data: "{}",
@@ -8,7 +8,7 @@ function traerInformacion(){
   
     success : function(respuesta) {
 		console.log(respuesta);
-		$("#resultado").empty();
+		$("#resultadoSalones").empty();
         let miTabla = '<table>';
 		for (i=0; i<respuesta.items.length; i++){
 			miTabla += '<tr>';
@@ -21,7 +21,7 @@ function traerInformacion(){
 	
 		}
         miTabla += '</table>';
-	    $("#resultado").append(miTabla);    
+	    $("#resultadoSalones").append(miTabla);    
 
 	},
     error : function(xhr, status) {
@@ -30,13 +30,13 @@ function traerInformacion(){
 });
 }
 
-function guardarInformacion(){
+function guardarInformacionSalones(){
 	let misDatos = {
-		id: $("#id").val(),
+		id: $("#idSalones").val(),
         category_id: $("#category_id").val(),
         owner: $("#owner").val(),
         capacity: $("#capacity").val(),
-        name: $("#name").val()
+        name: $("#nameSalones").val()
 	};
 	let datosJson = JSON.stringify(misDatos); 
 	$.ajax(    
@@ -49,12 +49,12 @@ function guardarInformacion(){
     statusCode : {
 		201 :  function() {
 			alert("guardado!");
-			$("#id").val("");
+			$("#idSalones").val("");
 			$("#category_id").val("");
 			$("#owner").val("");
 			$("#capacity").val("");
-			$("#name").val("");
-        	traerInformacion();	
+			$("#nameSalones").val("");
+        	traerInformacionSalones();	
 			}
 		}
 	});

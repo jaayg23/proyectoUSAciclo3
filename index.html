@@ -10,15 +10,26 @@
         <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
         <script type="text/javascript" src="misFunciones.js"></script>
         <h1>SITIO WEB PARTY ROOM</h1>
-        <div id="resultado"></div>
-        <input type="button" onclick="traerInformacion()" title="Consultar" value="Consultar">
+        <h2>Seccion: Salones</h2>
+        <div id="resultadoSalones"></div>
+        <input type="button" onclick="traerInformacionSalones()" title="Consultar" value="Consultar">
         <div>
-            <input type="number" id="id" placeholder="id">
+            <input type="number" id="idSalones" placeholder="id">
             <input type="text" id="owner" placeholder="owner">
             <input type="number" id="capacity" placeholder="capacity">
             <input type="number" id="category_id" placeholder="category_id">
-            <input type="text" id="name" placeholder="name">
+            <input type="text" id="nameSalones" placeholder="name">
         </div>
-        <input type="button" onclick="guardarInformacion()" title="Guardar" value="Guardar">
+        <input type="button" onclick="guardarInformacionSalones()" title="Guardar" value="Guardar">
+        <h3>Seccion: Clientes</h3>
+        <div id="resultadoClientes"></div>
+        <input type="button" onclick="traerInformacionClientes()" title="Consultar" value="Consultar">
+        <div>
+            <input type="number" id="idClientes" placeholder="id">
+            <input type="text" id="nameClientes" placeholder="owner">
+            <input type="number" id="email" placeholder="email">
+            <input type="number" id="age" placeholder="age">
+        </div>
+        <input type="button" onclick="guardarInformacionClientes()" title="Guardar" value="Guardar">
     </body>
 </html>
