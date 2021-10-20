@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="misFunciones.js"></script>
+    <form action="">
+        <label for="idClientes">
+            <input type="number" id="idClientes" placeholder="id">
+        </label>
+        <label for="nameClientes">
+            <input type="text" id="nameClientes" placeholder="owner">
+        </label>
+        <label for="email">
+            <input type="text" id="email" placeholder="email">
+        </label>
+        <label for="age">
+            <input type="number" id="age" placeholder="age">
+        </label>
+    </form>
+    <div id="resultadoClientes"></div>
+    <input type="button" onclick="traerInformacionClientes()" title="Consultar" value="Consultar"/>
+    <input type="button" onclick="guardarInformacionClientes()" title="Guardar" value="Guardar">
+</body>
+</html>
