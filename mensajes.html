@@ -7,6 +7,18 @@
     <title>Mensajes</title>
 </head>
 <body>
-    
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="misFunciones.js"></script>
+    <form action="">
+        <label for="idMensajes">
+            <input type="number" id="idMensajes" placeholder="id">
+        </label>
+        <label for="messagetext">
+            <input type="text" id="messagetext" placeholder="mensaje">
+        </label>
+    </form>
+    <div id="resultadoMensajes"></div>
+    <input type="button" onclick="traerInformacionMensajes()" title="Consultar" value="Consultar"/>
+    <input type="button" onclick="guardarInformacionMensajes()" title="Guardar" value="Guardar">
 </body>
 </html>
