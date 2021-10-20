@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salones</title>
+</head>
+<body>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="misFunciones.js"></script>
+    <form action="">
+        <label for="id_salones">
+            <input type="number" id="id_salones" placeholder="id">
+        </label>
+        <label for="owner">
+            <input type="text" id="owner" placeholder="owner">
+        </label>
+        <label for="capacity">
+            <input type="number" id="capacity" placeholder="capacity">
+        </label>
+        <label for="category_id">
+            <input type="number" id="category_id" placeholder="category_id">
+        </label>
+        <label for="nameSalones">
+            <input type="text" id="nameSalones" placeholder="name">
+        </label>
+    </form>
+    <div id="resultadoSalones"></div>
+    <input type="button" onclick="traerInformacionSalones()" title="Consultar" value="Consultar">
+    <input type="button" onclick="guardarInformacionSalones()" title="Guardar" value="Guardar">
+</body>
+</html>
