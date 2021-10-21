@@ -1,0 +1,22 @@
+.main-nav{
+    margin-top: 20px;
+    list-style: none;
+    padding-left: 0;
+    background-color: #CD5C5C;
+}
+
+.main-nav__item{
+    display: inline-block;
+    padding-right: 15px;
+}
+
+.main-nav__item a{
+    color:white;
+    padding: 5px;
+    border-radius: 2px;
+    text-decoration: none;
+}
+
+.main-nav__item a:hover{
+    color: #000080;
+}
