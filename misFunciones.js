@@ -116,6 +116,31 @@ function actualizarInformacionSalones(){
 });
 }
 
+function borrarInformacionSalones(){
+	let misDatos ={
+		id: $("#idSalones").val()
+	};
+	let datosJson = JSON.stringify(misDatos)
+	$.ajax({    
+		url : 'https://g73664e6c770cfe-partyroom.adb.us-ashburn-1.oraclecloudapps.com/ords/admin/partyroom/partyroom',
+		data: datosJson,
+		type : 'DELETE',
+		dataType : 'json',
+		contentType: "application/json; charset=utf-8",
+		statusCode : {
+			204 : function() {
+				alert("borrado!");
+				$("#idSalones").val("")
+				$("#category_id").val("");
+				$("#owner").val("");
+				$("#capacity").val("");
+				$("#nameSalones").val("");
+				traerInformacionSalones();
+			}
+		}
+	});
+}
+
 function traerInformacionClientes(){
 	$.ajax({    
     url : 'https://g73664e6c770cfe-partyroom.adb.us-ashburn-1.oraclecloudapps.com/ords/admin/client/client',
