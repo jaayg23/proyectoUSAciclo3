@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Clientes</title>
 </head>
 <body>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script type="text/javascript" src="misFunciones.js"></script>
+    <script type="text/javascript" src="./js/clientes.js"></script>
     <form action="">
         <label for="idClientes">
             <input type="number" id="idClientes" placeholder="id">
@@ -26,5 +26,7 @@
     <div id="resultadoClientes"></div>
     <input type="button" onclick="traerInformacionClientes()" title="Consultar" value="Consultar"/>
     <input type="button" onclick="guardarInformacionClientes()" title="Guardar" value="Guardar">
+    <input type="button" onclick="actualizarInformacionClientes()" title="Actualizar" value="Actualizar">
+    <input type="button" onclick="borrarInformacionClientes()" title="Borrar" value="Borrar">
 </body>
 </html>
