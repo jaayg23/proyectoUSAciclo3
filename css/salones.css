@@ -1,0 +1,24 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    font-size: 62.5%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+table {
+    width: 100%;
+}
+
+td{
+    font-size: 2rem;
+    text-align: left;
+    vertical-align: top;
+    border: 1px solid #000;
+    border-spacing: 0;
+    border-collapse: collapse;
+    padding: 0.4rem;
+}
