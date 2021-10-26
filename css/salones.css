@@ -9,10 +9,15 @@ html{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
+.container{
+
+}
+
 table {
     width: 100%;
     border: 0.1rem solid black;
     justify-content: center;
+    align-items: center;
 }
 
 td{

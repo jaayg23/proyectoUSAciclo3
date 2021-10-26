@@ -8,29 +8,31 @@
     <link rel="stylesheet" href="./css/salones.css">
 </head>
 <body>
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script type="text/javascript" src="./js/salones.js"></script>
-    <form action="">
-        <label for="id_salones">
-            <input type="number" id="idSalones" placeholder="id">
-        </label>
-        <label for="owner">
-            <input type="text" id="owner" placeholder="owner">
-        </label>
-        <label for="capacity">
-            <input type="number" id="capacity" placeholder="capacity">
-        </label>
-        <label for="category_id">
-            <input type="number" id="category_id" placeholder="category_id">
-        </label>
-        <label for="nameSalones">
-            <input type="text" id="nameSalones" placeholder="name">
-        </label>
-    </form>
-    <div id="resultadoSalones"></div>
-    <input type="button" onclick="traerInformacionSalones()" title="Consultar" value="Consultar">
-    <input type="button" onclick="guardarInformacionSalones()" title="Guardar" value="Guardar">
-    <input type="button" onclick="actualizarInformacionSalones()" title="Actualizar" value="Actualizar">
-    <input type="button" onclick="borrarInformacionSalones()" title="Borrar" value="Borrar">
+    <main class="container">
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script type="text/javascript" src="./js/salones.js"></script>
+        <form action="">
+            <label for="id_salones">
+                <input type="number" id="idSalones" placeholder="id">
+            </label>
+            <label for="owner">
+                <input type="text" id="owner" placeholder="owner">
+            </label>
+            <label for="capacity">
+                <input type="number" id="capacity" placeholder="capacity">
+            </label>
+            <label for="category_id">
+                <input type="number" id="category_id" placeholder="category_id">
+            </label>
+            <label for="nameSalones">
+                <input type="text" id="nameSalones" placeholder="name">
+            </label>
+        </form>
+        <div id="resultadoSalones"></div>
+        <input type="button" onclick="traerInformacionSalones()" title="Consultar" value="Consultar">
+        <input type="button" onclick="guardarInformacionSalones()" title="Guardar" value="Guardar">
+        <input type="button" onclick="actualizarInformacionSalones()" title="Actualizar" value="Actualizar">
+        <input type="button" onclick="borrarInformacionSalones()" title="Borrar" value="Borrar">
+    </main>
 </body>
 </html>
