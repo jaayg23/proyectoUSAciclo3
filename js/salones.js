@@ -19,7 +19,6 @@ function traerInformacionSalones(){
 	        miTabla += '<td>'+ respuesta.items[i].name+ '</td>';
 			miTabla += '<td><button onclick="editarRegistroSalones('+respuesta.items[i].id+' )">Editar</button>' 		
 			miTabla += '</tr>';
-	
 		}
         miTabla += '</table>';
 	    $("#resultadoSalones").append(miTabla);    

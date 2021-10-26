@@ -11,6 +11,8 @@ html{
 
 table {
     width: 100%;
+    border: 0.1rem solid black;
+    justify-content: center;
 }
 
 td{
