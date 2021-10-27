@@ -10,7 +10,7 @@ html{
 }
 
 header{
-    width: 100%;
+    width: 100vw;
     height: 20px;
     margin-top: 0;
     list-style: none;
