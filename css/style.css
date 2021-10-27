@@ -6,7 +6,7 @@
 
 html{
     font-size: 62.5%;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Zen Kaku Gothic Antique', sans-serif;
 }
 
 header{
@@ -17,7 +17,7 @@ header{
     padding-left: 0;
     background-color: #CD5C5C;
     text-align: right;
-    font-size: 1.8rem;
+    font-size: 1.2rem;
 }
 
 main{
