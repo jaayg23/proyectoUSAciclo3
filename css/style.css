@@ -26,13 +26,13 @@ main{
 
 .main-nav__item{
     display: inline-block;
-    padding-right: 15px;
+    padding-right: 1.5rem;
 }
 
 .main-nav__item a{
     color:white;
-    padding: 5px;
-    border-radius: 2px;
+    padding: 0.5rem;
+    border-radius: 0.2rem;
     text-decoration: none;
 }
 
